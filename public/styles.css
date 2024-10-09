@@ -1,42 +1,70 @@
+/* Global Styles */
+@font-face {
+  font-family: gohu;
+  src: url(fonts/gohu.woff);
+}
+main {
+    background-color: #0c0d10;
+    font-family: gohu, "IBM Plex Mono", "Lucida Console";
+    margin: auto;
+}
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
+    color: #FEFEFE;
+    background-color: #0c0d10;
+    font-family: gohu, "IBM Plex Mono", "Lucida Console";
+    line-height: 1.4;
+  }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
 
-h1 {
-    margin: 0;
-}
+  .ibm-plex-mono-regular {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  pre {
+    font-family: "IBM Plex Mono", "Lucida Console", monospace, Monaco;
+    font-size: 14px;
+    line-height: 1.0;
+    -webkit-text-size-adjust: 140%;
+    white-space: pre-wrap;
+    
+  }
 
-section {
-    margin: 20px 0;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-}
-
-.job {
-    margin-bottom: 15px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
-}
+  
+  a {
+    color: #d10000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  /* Preformatted box style */
+  h2, h3 {
+    color: #d10000;
+  }
+  
+  img {
+    height: 90%;
+    width: 90%;
+  }
+  
