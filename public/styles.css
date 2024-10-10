@@ -1,70 +1,60 @@
 /* Global Styles */
-@font-face {
-  font-family: gohu;
-  src: url(fonts/gohu.woff);
-}
-main {
-    background-color: #0c0d10;
-    font-family: gohu, "IBM Plex Mono", "Lucida Console";
-    margin: auto;
-}
 body {
-    color: #FEFEFE;
-    background-color: #0c0d10;
-    font-family: gohu, "IBM Plex Mono", "Lucida Console";
-    line-height: 1.4;
-  }
+  color: #FEFEFE;
+  background-color: #0c0d10;
+  font-family: "gohu", "Lucida Console", monospace, Monaco;
+  line-height: 1.4;
+}
 
+@font-face {
+  font-family: "gohu";
+  src: url("gohu.woff") format('woff');
+}
 
-  .ibm-plex-mono-regular {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  pre {
-    font-family: "IBM Plex Mono", "Lucida Console", monospace, Monaco;
-    font-size: 14px;
-    line-height: 1.0;
-    -webkit-text-size-adjust: 140%;
-    white-space: pre-wrap;
-    
-  }
+pre {
+  font-family: "gohu", "Lucida Console", monospace, Monaco;
+  font-size: 14px;
+  line-height: 1.0;
+  -webkit-text-size-adjust: 140%;
+  white-space: pre-wrap;
+}
 
-  
-  a {
-    color: #d10000;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+a {
+  color: #d10000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+.container {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+@media (min-width: 992px) {
   .container {
-    margin-right: 0px;
-    margin-left: 0px;
+    width: 970px;
   }
-  
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
-  
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
-  }
-  
-  /* Preformatted box style */
-  h2, h3 {
-    color: #d10000;
-  }
-  
-  img {
-    height: 90%;
-    width: 90%;
-  }
-  
+}
+
+/* Preformatted box style */
+h2, h3 {
+  color: #d10000;
+}
+
+img {
+  height: 90%;
+  width: 90%;
+  margin-left: -125px;
+}
