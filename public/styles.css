@@ -8,7 +8,12 @@ body {
 
 @font-face {
   font-family: "gohu";
-  src: url("gohu.woff") format('woff');
+  src: url("/public/fonts/gohu.woff") format('woff'),
+      url("/public/fonts/gohumed.woff") format('woff'),
+      url("/public/fonts/GohuFont-Medium.ttf") format('truetype'),
+      url("/public/fonts/GohuFont-Bold.ttf") format('truetype'),
+      url("/public/fonts/gohufont-14.fon") format('fon'),
+      url("/public/fonts/gohufont.otb") format('opentype');
 }
 
 pre {
